@@ -1,0 +1,112 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.screen {
+    width: 80vw; /* Ширина прямокутника відносно ширини вікна */
+    height: 5vw; /* Висота прямокутника відносно ширини вікна */
+    background-color: #333; /* Колір прямокутника */
+    color: #fff; /* Колір тексту */
+    display: flex; /* Використовуємо flexbox для центрування тексту */
+    justify-content: center; /* Центрування тексту по горизонталі */
+    align-items: center; /* Центрування тексту по вертикалі */
+    font-size: 24px; /* Розмір тексту */
+    font-weight: bold; /* Жирний текст */
+    margin: auto; /* Центрування прямокутника по горизонталі */
+    margin-bottom: 5vw; /* Відстань між прямокутником і сіткою місць */
+    text-align: center; /* Вирівнювання тексту по центру */
+}
+
+.seating-chart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 місць у ряду */
+    grid-template-rows: repeat(7, 1fr); /* 7 рядів */
+    gap: 5px; /* Простір між місцями */
+    width: 80vw; /* Ширина сітки відносно ширини вікна */
+    height: 40vw; /* Висота сітки відносно ширини вікна */
+    max-width: 800px; /* Максимальна ширина сітки */
+    max-height: 400px; /* Максимальна висота сітки */
+    margin: auto; /* Центруємо сітку по горизонталі */
+}
+
+.seat {
+    width: 100%; /* Заповнюємо весь простір в колонці */
+    height: 100%; /* Заповнюємо весь простір в рядку */
+    background-color: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px; /* Розмір тексту для назв місць */
+    font-weight: bold;
+}
+
+.seat.selected {
+    background-color: #6c757d;
+}
+
+.seat.reserved {
+    background-color: #888; /* Сірий колір для зарезервованих місць */
+    cursor: not-allowed;
+}
+
+#reserve-btn, #info-btn, #refresh-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.user-info {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.user-info input {
+    padding: 10px;
+    width: 80vw;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.user-info button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}

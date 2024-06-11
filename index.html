@@ -1,1 +1,85 @@
-aboba
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кінотеатр</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <button class="nav-btn">Навігація</button>
+    <h1>Кінотеатр</h1>
+</header>
+<main>
+    <div class="carousel">
+        <div class="carousel-container">
+            <!-- 10 афіш фільмів -->
+            <div class="poster" id="poster1" data-film-id="1">
+                <a href="movie.html?filmId=1">
+                    <img src="images/poster1.jpg" alt="Фільм 1">
+                    <h2>Код Галактики</h2>
+                </a>
+            </div>
+            <div class="poster" id="poster2" data-film-id="2">
+                <a href="movie.html?filmId=2">
+                    <img src="images/poster2.jpg" alt="Фільм 2">
+                    <h2>Серце океану</h2>
+                </a>
+            </div>
+            <div class="poster" id="poster3" data-film-id="3">
+                <a href="movie.html?filmId=3">
+                    <img src="images/poster3.jpg" alt="Фільм 3">
+                    <h2>Магія місячного світла</h2>
+                </a>
+            </div>
+            <div class="poster" id="poster4" data-film-id="4">
+                <a href="movie.html?filmId=4">
+                    <img src="images/poster4.jpg" alt="Фільм 4">
+                    <h2>Втеча з часу</h2>
+                </a>
+            </div>
+            <div class="poster" id="poster5" data-film-id="5">
+                <a href="movie.html?filmId=5">
+                    <img src="images/poster5.jpg" alt="Фільм 5">
+                    <h2>Темний лицар: Відродження</h2>
+                </a>
+            </div>
+            <div class="poster" id="poster6" data-film-id="6">
+                <a href="movie.html?filmId=6">
+                    <img src="images/poster6.jpg" alt="Фільм 6">
+                    <h2>Пам'ять лісу</h2>
+                </a>
+            </div>
+            <div class="poster" id="poster7" data-film-id="7">
+                <a href="movie.html?filmId=7">
+                    <img src="images/poster7.jpg" alt="Фільм 7">
+                    <h2>Космічна Одіссея 3020</h2>
+                </a>
+            </div>
+            <div class="poster" id="poster8" data-film-id="8">
+                <a href="movie.html?filmId=8">
+                    <img src="images/poster8.jpg" alt="Фільм 8">
+                    <h2>Місто тіней</h2>
+                </a>
+            </div>
+            <div class="poster" id="poster9" data-film-id="9">
+                <a href="movie.html?filmId=9">
+                    <img src="images/poster9.jpg" alt="Фільм 9">
+                    <h2>Королівство драконів</h2>
+                </a>
+            </div>
+            <div class="poster" id="poster10" data-film-id="10">
+                <a href="movie.html?filmId=10">
+                    <img src="images/poster10.jpg" alt="Фільм 10">
+                    <h2>Інферно: Пробудження</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <button class="arrow arrow-left" id="prevBtn">&lt;</button>
+    <button class="arrow arrow-right" id="nextBtn">&gt;</button>
+</main>
+<script src="scripts.js"></script>
+</body>
+</html>

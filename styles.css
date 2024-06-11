@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.poster {
+    flex: 0 0 22vw;
+    height: 80vh;
+    margin: 0 1vw;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.poster:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease; /* Додаємо плавну анімацію */
+}
+
+.poster img {
+    width: 100%;
+    height: 90%;
+    flex-grow: 1;
+}
+
+.poster h2 {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.arrow.visible {
+    visibility: visible;
+}
+
+@media (max-width: 1200px) {
+    .poster {
+        flex: 0 0 30vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .poster {
+        flex: 0 0 45vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .poster {
+        flex: 0 0 70vw;
+    }
+}
